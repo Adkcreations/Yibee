@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body>
+    <section class="front">
+        <!--Mobile show case
+        -->
+        <div class="simba">
+            <div class="disp">
+                <img src="mscre.png" class="scredhe">
+            </div>
+        </div>
+        <!--2nd-->
+
+        <div class="center">
+            <div class="mobile">
+                <div class="screen">
+                    <img src="yibe.png" class="dk">
+                </div>
+                <div class="home">
+                </div>
+                <div class="inner"></div>
+                <ul class="volume">
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="silent">
+                    <li></li>
+                </ul>
+                <ul class="sleep">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Login form-->
+        <div class="f-box">
+            <div class="headi"><h1>Yibe</h1></div>
+            <div class="button">
+                <div id="btn"></div>
+                <button type="button" class="togg-btn" onclick="login()">Sign In</button>
+                <button type="button" class="togg-btn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="ico">
+                <img src="fb.png">
+                <img src="twit.png">
+                <img src="gmail.png">
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" class="field" placeholder="User Id" required>
+                <input type="text" class="field" placeholder="Enter Password" required>
+                <input type="checkbox" class="c-box"><span>Remember Password</span>
+                <button type="submit" class="sub-btn">Sign In</button>    
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="field" placeholder="User Id" required>
+                <input type="Email" class="field" placeholder="Email Id" required>
+                
+                <input type="text" class="field" placeholder="Enter Password" required>
+                <input type="checkbox" class="c-box"><span>I agree to terms and Conditions</span>
+                <button type="submit" class="sub-btn">Sign Up</button>    
+            </form>
+        </div>
+        
+    </section>
+    
+
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+
+    </script>
+</body>
+</html>
